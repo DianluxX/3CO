@@ -1,0 +1,75 @@
+#logo {
+    width: 50px;  /* Ancho del logo */
+    height: 1px; /* Altura del logo */
+}
+img {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+}
+img:hover {
+  filter: grayscale(0%);
+}
+
+
+.navbar {
+    min-height: 55px; /* Altura de la navbar */
+    display: flex; 
+    align-items: center;
+}
+.navbar-nav > li > a, .navbar-brand {
+    padding-top: 5px !important; /* Espacio superior dentro de la navbar */
+    padding-bottom: 0 !important; /* Espacio inferior dentro de la navbar */
+    height: 30px; /* Altura de los elementos dentro de la navbar */
+}
+
+.navbar-nav > li > a, .navbar-brand {
+    padding: 5px 50px 0 50px !important; 
+}
+
+.navbar a {
+    margin-top: 10px;
+}
+
+
+.header {
+  position: relative;
+  background-image: url('img/princi.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Ajusta la opacidad a tu gusto */
+  z-index: 1; /* Asegura que el pseudo-elemento esté debajo del texto */
+}
+
+h1, h2 {
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté encima del pseudo-elemento */
+    /* Agrega sombra al texto para que resalte */
+    text-shadow: 2px 2px 4px #000000;
+    color: #FFFFFF; /
+}
+
+
+/*btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }/*

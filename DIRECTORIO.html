@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIRECTORIO</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .directory-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+    .directory-header {
+      background-color: #0078d4;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .directory-header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .directory-list {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .directory-item {
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 4px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .directory-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .directory-item h3 {
+      margin: 10px 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+    .directory-item p {
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .directory-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .hidden {
+        display: none;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: #ff8c00; /* Color naranja aplicado al navbar */
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+      }
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+  </style>
+  <script>
+    function toggleList(id) {
+        // Oculta todas las listas
+        var lists = document.querySelectorAll('.directory-list ul');
+        for (var i = 0; i < lists.length; i++) {
+          lists[i].style.display = 'none';
+        }
+        // Muestra la lista seleccionada
+        var list = document.getElementById(id);
+        list.style.display = 'block';
+      }
+  </script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a class="navbar-brand" href="3COPROPIEDADES.html"> <img src="img/logo24co.png" alt="3COPROPIEDADES" width="60"></a>
+    <a href="INDEX.html">INICIO</a>
+    <a href="VENTAYALQUILER.html">VENTA Y ALQUILER</a>
+    <a href="DIRECTORIO.html">DIRECTORIO</a>
+    <a href="CONTACTO.html">CONTÁCTANOS</a>
+    <a class="navbar-brand" href="https://app.aedificium.pe/users/sign_in">
+      <img src="img/logo-aedificium.png" alt="Aedificium" style="height: 30px;">  
+    </a>
+  </nav>
+
+    <div class="directory-container">
+        <div class="directory-header">
+          <h1>DIRECTORIO</h1>
+        </div>
+        <div class="directory-list">
+
+
+            <div class="directory-item">
+                <img src="LOGO/TEC.jpg" alt="Logo de Tecnología y Sistemas Intelignetes">
+                <h3 onclick="toggleList('tec')"> TECNOLOGÍA Y SISTEMAS INTELIGENTES</h3>
+                <ul id="tec" class="hidden">
+                    <li>IT SERVICE</li>
+                    <li>TEK PERÚ</li>
+                    <li>KREATECK</li>
+                    <li>BENJA PERU</li>
+                  </ul>
+                </ul>
+              </div>
+      <!-- ... otros sectores ... -->
+
+      <div class="directory-item">
+        <img src="LOGO/MED.jpg" alt="Logo de Consultorio Médico">
+        <h3 onclick="toggleList('med')">CONSULTORIO MÉDICO</h3>
+        <ul id="med" class="hidden">
+            <li>ODONTOLOGÍA Nathaly Ramírez </li>
+            <li>DOCTORA SIN FILTRO</li>
+            <li>SKIN MEDICAL</li>
+            <li>SOLUCIONES ITEPSA</li>
+                
+        </ul>
+      </div>
+
+      <div class="directory-item">
+        <img src="LOGO/TUR.jpg" alt="Logo de Turismo">
+        <h3 onclick="toggleList('tur')">TURISMO</h3>
+        <ul id="tur" class="hidden">
+            <li>OVERSEAS PERÚ </li>
+            <li>AVIAREPS </li>
+        </ul>
+      </div>
+
+      <div class="directory-item">
+        <img src="LOGO/CONS.jpg" alt= "Logo de Constructora e Inmobiliaria">
+        <h3 onclick="toggleList('cons')">CONSTRUCTORA E INMOBILIARIA</h3>
+        <ul id="cons" class="hidden">
+            <li>PACIFICO CONSULTORES</li>
+            <li>ANG CONSTRUCTO</li>
+            <li>CMA INGENIEROS</li>
+            <li>INMOBILIARIA SAN MARTIN</li>
+            <li>SAITO INMOBILIARIA</li>
+            <li>CHL</li>
+        </ul>
+      </div>
+
+      <div class="directory-item">
+        <img src="LOGO/ADMICON.ico" alt="LOGO DE ASESORÍA ADMINISTRATIVA Y CONTABLE">
+        <h3 onclick="toggleList('admicon')">ASESORÍA ADMINISTRATIVA Y CONTABLE</h3>
+        <ul id="admicon" class="hidden"> 
+            <li>LOGISTIC TRADE</li>
+            <li>CARGO WEY</li>
+            <li>MACEC PACIFICO</li>
+        </ul>
+
+      </div>
+
+      <div class="directory-item">
+        <img src="LOGO/REST.ico" alt="SERVICIO DE ALIMENTOS Y RESTAURANTES">
+        <h3 onclick="toggleList('rest')">SERVICIO DE ALIMENTOS</h3>
+        <ul id="rest" class="hidden"> 
+            <li>PUNTO HORECA</li>
+        </ul>
+
+      </div>
+
+      <div class="directory-item">
+        <img src="LOGO/AUDIO.ico" alt="LOGO AUDIVISUAL">
+        <h3 onclick="toggleList('audio')">AUDIOVISUALES</h3>
+        <ul id="audio" class="hidden"> 
+            <li>DRONE FILMS PROJECT</li>
+        </ul>
+
+      </div>
+
+      <div class="directory-item">
+        <img src="LOGO/ABO.ico" alt="LOGO DE ESTUDIO DE ABOGADOS">
+        <h3 onclick="toggleList('abo')">ESTUDIO DE ABOGADOS</h3>
+        <ul id="abo" class="hidden"> 
+            <li>CASA FIRMA DE CONSULTORIA</li>
+            <li>ESTUDIO BARDALES</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

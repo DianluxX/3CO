@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3COPROPIEDADES</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+        .tarjeta {
+            background-color: #fff;
+            margin: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            width: calc(50% - 20px); /* Ajusta el ancho para que dos tarjetas quepan en una fila */
+        }
+        .imagen img {
+            max-width: 100px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+        }
+        .titulo {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .descripcion {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .contenedor-superior {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .texto-superior {
+            flex-basis: 50%;
+            text-align: center;
+        }
+        .imagen-superior {
+            flex-basis: 50%;
+        }
+        .imagen-superior img {
+            width: 100%;
+        }
+        .titulo-superior {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .descripcion-superior {
+            font-size: 16px;
+        }
+        /* Estilos para las tarjetas centradas */
+        .tarjeta {
+            background-color: #fff;
+            width: 300px; /* Ajusta según sea necesario */
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        /* Añade estilos adicionales según sea necesario */
+
+        .imagen img {
+            /* Ajusta el tamaño del icono a un ancho de 50px */
+            width: 50px;
+            /* Opcional: asegúrate de que la imagen se mantenga proporcional */
+            height: auto;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Esto mantiene los elementos espaciados */
+            align-items: center; /* Centra los elementos verticalmente */
+            background-color: #ff8c00; /* Color de fondo del navbar */
+            padding: 10px 0; /* Añade padding vertical pero no horizontal */
+            width: 100%; /* Esto hará que el navbar ocupe todo el ancho */
+            box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+        }
+
+        body { font-family: Arial, sans-serif; }
+        .navbar { display: flex; justify-content: space-between; background-color: #ff8c00; padding: 10px; }
+        .navbar a { color: white; text-decoration: none; padding: 8px 16px; }
+        .header { text-align: center; padding: 50px; }
+        .footer { background-color: #ff8c00; color: white; text-align: center; padding: 10px; }
+
+    </style>
+</head>
+<body>
+      
+      
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="3COPROPIEDADES.html"> <img src="img/logo24co.png" alt="3COPROPIEDADES" width="60"></a>
+          <a href="INDEX.html" onclick="showInicio()">INICIO</a>
+          <a href="VENTAYALQUILER.html">VENTA Y ALQUILER</a>
+          <a href="DIRECTORIO.html" onclick="showDirectorio()">DIRECTORIO</a>
+          <a href="CONTACTO.html" onclick="showContactanos()">CONTÁCTANOS</a>
+          <a class="navbar-brand" href="https://app.aedificium.pe/users/sign_in">
+            <img src="img/logo-aedificium.png" alt="Aedificium" style="height: 30px;">  
+          </a>
+        </nav>
+
+<div class="contenedor-superior">
+    <div class="texto-superior">
+        <div class="titulo-superior">¿Por Qué Confiar En 3COPropiedades?</div>
+        <div class="descripcion-superior">Coordinamos e incorporamos todas las 
+            herramientas necesarias para asegurar el óptimo funcionamiento de su propiedad</div>
+    </div>
+    <div class="imagen-superior">
+        <img src="img/oficina-1.jpg" alt="Imagen Superior">
+    </div>
+</div>
+
+
+<div class="tarjeta">
+    <div class="imagen">
+        <img src="ico/buscar.png" alt="Imagen">
+    </div>
+    <div class="titulo">ADMINISTRACION TRANSPARENTE</div>
+    <div class="descripcion">Nuestra gestión de administración se caracteriza
+         por permitirle acceso a toda la estructura de costos del servicio. </div>
+</div>
+<div class="tarjeta">
+    <div class="imagen">
+        <img src="ico/trabajo-colaborativo.png" alt="Imagen">
+    </div>
+    <div class="titulo">EQUIPO DE AMPLIA EXPERIENCIA</div>
+    <div class="descripcion">Tenemos un equipo de profesionales con amplia 
+        experiencia y capacitado para brindarle un servicio de excelencia.</div>
+</div>
+<div class="tarjeta">
+    <div class="imagen">
+        <img src="ico/proteger.png" alt="Imagen">
+    </div>
+    <div class="titulo">SEGURIDAD PARA TU INMUEBLE</div>
+    <div class="descripcion">Contamos con pólizas de seguro, consejeros legales
+         y asesores contables, los cuales ponemos a su disposición.</div>
+</div>
+<div class="tarjeta">
+    <div class="imagen">
+        <img src="ico/soporte-24-horas.png" alt="Imagen">
+    </div>
+    <div class="titulo">SOPORTE Y TECNOLOGIA LOS 365 DÍAS</div>
+    <div class="descripcion">Brindamos una plataforma online donde podrá consultar
+         y revisar la información de su inmueble, con un soporte 24x7.</div>
+</div>
+</body>
+</html>

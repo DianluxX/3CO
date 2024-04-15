@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VENTA Y ALQUILER</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url("img/terraza.png") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      width: 80%;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 10px;
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    }
+    .container h2 {
+      text-align: center;
+      color: #35424a;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #35424a;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+    .container p {
+      text-align: justify;
+      color: #666666;
+      line-height: 1.6;
+      font-size: 1.5em;
+      margin-bottom: 30px;
+    }
+    .container form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container form input[type="text"] {
+      margin: 10px 0;
+      padding: 15px;
+      width: 80%;
+      border: none;
+      border-bottom: 2px solid #35424a;
+      font-size: 1.2em;
+    }
+    .container form input[type="submit"] {
+      margin-top: 30px;
+      padding: 15px 30px;
+      border: none;
+      background-color: #35424a;
+      color: #ffffff;
+      cursor: pointer;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="venta">
+    <div class="container">
+      <h2>ES TIEMPO DE UNA OFICINA DISEÑADA PARA TI</h2>
+      <p>Con ambientes reformados, elegantes en un entorno contemporáneo</p>
+      <p>Con finos acabados y moderna arquitectura</p>
+      <p>Áreas que se acomodan perfecto a la necesidad de tu negocio o empresa</p>
+      <!-- <form>
+        <input type="text" id="name" name="name" placeholder="Nombres">
+        <input type="text" id="dni" name="dni" placeholder="DNI">
+        <input type="text" id="office" name="office" placeholder="Oficina">
+        <input type="text" id="phone" name="phone" placeholder="Teléfono">
+        <input type="submit" value="Enviar">
+      </form> -->
+      <form action="DATOS.php" method="post">
+        Nombre: <input type="text" name="nombre"><br>
+        DNI: <input type="text" name="dni"><br>
+        Oficina: <input type="text" name="oficina"><br>
+        Número de teléfono: <input type="text" name="telefono"><br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+
+    </div>
+  </div>
+</body>
+</html>

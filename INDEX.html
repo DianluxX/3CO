@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3CO PROPIEDADES</title>
+<style>
+  body { font-family: Arial, sans-serif; }
+  .navbar { display: flex; justify-content: space-between; background-color: #ff8c00; padding: 10px; }
+  .navbar a { color: white; text-decoration: none; padding: 8px 16px; }
+  .header { text-align: center; padding: 50px; }
+  .footer { background-color: #ff8c00; color: white; text-align: center; padding: 10px; }
+</style>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="3COPROPIEDADES.html"> <img src="img/logo24co.png" alt="3COPROPIEDADES" width="60"></a>
+    <a href="INDEX.html" onclick="showInicio()">INICIO</a>
+    <a href="VENTAYALQUILER.html">VENTA Y ALQUILER</a>
+    <a href="DIRECTORIO.html" onclick="showDirectorio()">DIRECTORIO</a>
+    <a href="CONTACTO.html" onclick="showContactanos()">CONTÁCTANOS</a>
+    <a class="navbar-brand" href="https://app.aedificium.pe/users/sign_in">
+      <img src="img/logo-aedificium.png" alt="Aedificium" style="height: 30px;">  
+    </a>
+  </nav>
+  
+<div class="header" style="background-image: url('img/princi.png'); background-size: cover; background-position: center; height: 400px">
+  <h1>3CO PROPIEDADES</h1>
+  <h2>Oficinas Boutique Magdalena</h2>
+</div>
+
+<div style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+  <marquee><h2>ES TIEMPO DE UNA OFICINA DISEÑADA PARA TI</h2></marquee>
+  <p>Con ambientes reformados, elegantes en un entorno contemporáneo</p>
+  <p>Con finos acabados y moderna arquitectura</p>
+  <p>Áreas que se acomodan perfecto a la necesidad de tu negocio o empresa</p>
+  <a href="#findOffice" style="background-color: #ff8c00; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Encuentra tu Oficina</a>
+</div>
+<div style="display: flex; justify-content: space-between;">
+  <img src="img/oficina.png" alt="OFICINA1"  style="width: 45%; height: auto;">
+  <img src="img/oficina1.png" alt="OFICINA2"  style="width: 45%; height: auto;">
+</div>
+
+
+<div style="background-color: white; padding: 20px; text-align: center;">
+  <h3>Oficinas desde</h3>
+  <div style="display: flex; justify-content: space-around;">
+    <div style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 30%;">
+      <h4>35m<sup>2</sup></h4>
+      <p>Perfecto para pequeñas empresas o startups.</p>
+    </div>
+    <div style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 30%;">
+      <h4>45m<sup>2</sup></h4>
+      <p>Ideal para empresas en crecimiento con equipos medianos.</p>
+    </div>
+    <div style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 30%;">
+      <h4>55m<sup>2</sup></h4>
+      <p>Excelente para grandes empresas con equipos grandes.</p>
+    </div>
+  </div>
+</div>
+
+<div style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+    <h2>ES TIEMPO DE RESERVAR UNA SALA DE REUNIONES</h2>
+    <p>En el TIME Magdalena contamos con Salas de reuniones y Salas de Conferencia que puede 
+        reservar para satisfacer sus necesidades empresariales, desde salas pequeñas hasta auditorios, 
+        totalmente equipadas y amobladas con una impresionante vista al mar.</p>
+    <a href="#reserveRoom" style="background-color: #ffcc00; color: black; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Reserva aquí</a>
+  </div>
+  <div style="display: flex; justify-content: space-between;">
+    <img src="img/reu1.png" alt= "REUNION1" style="width: 45%; height: auto;">
+    <img src="img/reu.png" alt="REUNION2"  "width: 45%; height: auto;">
+  </div>
+
+  
+  <!-- Nuevo div "Beneficios de TIME Magdalena" -->
+  <div style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+    <h2>ES TIEMPO DE EVOLUCIONAR Y OBTENER MÁS BENEFICIOS</h2>
+
+    <p>Llevando tu empresa a otro nivel con:</p>
+    <ul style="list-style: none; padding: 0;">
+      <li>- Servicio de seguridad y Recepción en Lobby de ingreso 24 x 7</li>
+      <li>- Sistema de Ascensores positivos y negativos</li>
+      <li>- SSHH comunes por piso</li>
+      <li>- Área de lactancia</li>
+      <li>- Estacionamiento de Visita</li>
+      <li>- Comedor</li>
+    </ul>
+  </div>
+
+  <div style="display: flex; justify-content: space-between;">
+    <img src="img/bene2.png" alt="BENEFICIOS1"  style="width: 45%; height: auto;">
+    <img src="img/bene1.png" alt="BENEFICIOS2"  style="width: 45%; height: auto;">
+  </div>
+
+  
+  <!-- Nuevo div "Área de Comedor en TIME: Oficinas Boutique Magdalena" -->
+  <div style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+    <h2>ES TIEMPO DE COMER</h2>
+    <p>Contamos con un espacio totalmente acondicionado para que pueda disfrutar de un café, un almuerzo, una cena. Con una concesionaria 
+        de alimentos que le preparará deliciosos platillos.</p>
+    <!-- Imagen del área de comedor -->
+    <div style="background-image: url('img/cena.png'); height: 550px; background-size: cover; background-position: center;"></div>
+  </div>
+  
+
+    <!-- Nuevo div "Ubicación de TIME: Oficinas Boutique Magdalena" -->
+    <div style="background-color: #f2f2f2; padding: 20px; text-align: center;">
+        <h2>ES TIEMPO DE ESTAR DONDE TODO SUCEDE</h2>
+        <p>Tenemos la ubicación más conveniente en el nuevo centro empresarial de la ciudad de Magdalena, a un paso de San Isidro y Miraflores.</p>
+        <p>TRABAJA CERCA DE CASA</p>
+        <!-- Aquí puedes insertar un mapa estilizado de la ubicación -->
+    <iframe
+    width="600"
+    height="450"
+    style="border:0"
+    loading="lazy"
+    allowfullscreen
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.151450679226!2d-77.06242532418217!3d-12.101782488139317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c943df5bc043%3A0xe53203209fb2d208!2sEdificio%20Time%20Magdalena!5e0!3m2!1ses-419!2spe!4v1712636518715!5m2!1ses-419!2spe" >
+</iframe>
+      </div>
+
+
+
+<div class="footer">
+  <p>TIME: Oficinas Boutique Magdalena</p>
+</div>
+
+
+</script>
+
+</body>
+</html>
